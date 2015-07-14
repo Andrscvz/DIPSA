@@ -72,6 +72,9 @@ hr {
 
 img {
     vertical-align: middle;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
 }
 
 /*
@@ -90,6 +93,13 @@ fieldset {
 
 textarea {
     resize: vertical;
+}
+
+.panel-transparent {
+    background: none;
+}
+.panel-transparent .panel-body{
+    background: rgba(37, 41, 45,.5)!important;
 }
 
 /* ==========================================================================
@@ -140,6 +150,10 @@ main {
 	overflow-x: hidden;
 }
 
+.row a p{
+    text-align: center;
+}
+
 .bcg {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -155,74 +169,21 @@ main {
 
 /* Slide 2 */
 #inicio-2 .bcg {
-	background: none; 
-	background-color: #010101; 
-	height: 100%; 
-	text-align: center;
+    background-image:url('../img/backgrounds/inicio-2.jpg');
 }
 
 /* Slide 3 */
 #inicio-3 .bcg {
-	background-image:url('../img/backgrounds/inicio-2.jpg');
-	text-align: center;
+	background-image:url('../img/backgrounds/inicio-3.jpg');
 }
 
 
 /* Slide 4 */
-.curtainContainer {
-	width: 100%; 
-	height: 100%; 
-	position: relative;
-}
-
-.curtainContainer .curtain {
-	width: 300%; 
-	height: 1px; 
-	background-color: #000000; 
-	position: absolute; 
-	top: 25%; 
-	left: 0; 
-	opacity: 0
-}
-
-.curtainContainer .copy {
-	position: absolute; 
-	bottom: 30%; 
-	left: 0; 
-	width: 100%; 
-	text-align: center;
-}
-
 #inicio-4 .bcg {
-	background-image:url('../img/backgrounds/inicio-3.jpg')}
-
-/* Slide 5 */
-#inicio-5 {
-	position: relative;
-}
-
-#inicio-5 .bcg {
-	background-image:url('../img/backgrounds/inicio-5.jpg')
-}
-
-#inicio-5 .bcg2 {
-	background-image:url('../img/backgrounds/inicio-5b.jpg'); 
-	position: fixed; 
-	bottom: 0; 
-	left: 0; 
-	opacity: 0; 
-	z-index: 1
-}
-
-/* Slide 6 */
-#inicio-6 .bcg3 {
-	background: none; 
-	background-color: #010101; 
-	z-index: 2;  
-	position: fixed; 
-	bottom: 0; 
-	left: 0; 
-	opacity: 0; 
+    background: none; 
+    background-color: #010101; 
+    height: 100%; 
+    text-align: center;
 }
 
 .hsContainer {
@@ -256,10 +217,6 @@ main {
 		color: #F0F0F0;
 		margin-bottom: 12px;
 		text-align: justify;
-	}
-
-	.hsContent p {
-		text-align: center;
 	}
 
     .hsContent .row {
@@ -332,94 +289,20 @@ main {
 /* ==========================================================================
     Pantalla de despacho
    ========================================================================== */
-.caption {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    text-align: right;
-    color: #fff;
-}
-p, h1 { margin: 0; }
-h1 { margin-bottom: 0.2em; }
-p { line-height: 1.333em; }
- 
-/* full width/height container */
-#slides-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
- 
-/* double the height/width of a viewport */
-#slides {
-    width: 200%;
-    height: 200%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-.slide {
-    position:absolute;
-    top:0;
-    left:0;
-    width:50%;
-    height:50%;
-}
-
 /* Slide 1 */
-#despacho-1 {
-    background: url('../img/backgrounds/despacho-1.jpg') no-repeat center center;
-    background-size: cover;
+#despacho-1 .bcg {
+    background-image:url('../img/backgrounds/despacho-1.jpg');
 }
+
 /* Slide 2 */
-#despacho-2 {
-    background: url('../img/backgrounds/despacho-2.jpg') no-repeat center center;
-    background-size: cover;
-    -webkit-transform: translate(0,100%);
-    -ms-transform: translate(0,100%);
-    transform: translate(0,100%);
+#despacho-2 .bcg {
+    background-image:url('../img/backgrounds/despacho-2.jpg');
 }
+
 /* Slide 3 */
-#despacho-3 {
-    background: url('../img/backgrounds/despacho-3.jpg') no-repeat center center;
-    background-size: cover;
-    -webkit-transform: translate(100%,100%);
-    -ms-transform: translate(100%,100%);
-    transform: translate(100%,100%);
+#despacho-3 .bcg {
+    background-image:url('../img/backgrounds/despacho-3.jpg');
 }
-#despacho-3 .caption {
-    left: 5%;
-    right: auto;
-    color: #47373f;
-}
-/* Slide 4 */
-#despacho-4 {
-    background: url('../img/backgrounds/despacho-4.jpg') no-repeat center center;
-    background-size: cover;
-    -webkit-transform: translate(100%,0%);
-    -ms-transform: translate(100%,0%);
-    transform: translate(100%,0%);
-}
-#despacho-4 .caption {
-    right: auto;
-    left: 5%;
-    top: 7%;
-    bottom: auto;
-    color: #47373f;
-}
-
-#helper {
-    position:absolute;
-    left:0;
-    top: 0;
-    height:600%;
-    width: 0;
-}
-.marker {
-    height: 25%;
-    width: 100%;
-}
-
 /* ==========================================================================
     Pantalla de proyectos
    ========================================================================== */

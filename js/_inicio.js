@@ -16,8 +16,6 @@
 	// Setup variables
 	$window = $(window);
 	$slide = $('.homeSlide');
-	$slideTall = $('.homeSlideTall');
-	$slideTall2 = $('.homeSlideTall2');
 	$body = $('body');
 	htmlbody = $('html,body');
 	var duration = 500;
@@ -60,9 +58,7 @@
 	    
 	    // Resize our slides
 	    $slide.height(winH);
-	    $slideTall.height(winH*2);
-	    $slideTall2.height(winH*2);
-	    
+
 	    // Refresh Skrollr after resizing our sections
 	    s.refresh($('.homeSlide'));
 	    
@@ -81,9 +77,7 @@
 	}       
 
 	function initHomepageNav(){
-		var cuadro = getUrlParameter('cuadro');
 		var homeSlides = $('.homeSlide');
-		var $slideContent = $('.hsContainer');
 		var slidesCount = $(homeSlides).length;
 		var activeSlide = 1;
 		

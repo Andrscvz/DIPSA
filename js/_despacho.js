@@ -15,7 +15,7 @@
 	
 	// Setup variables
 	$window = $(window);
-
+	$slide = $('.homeSlide');
 	$body = $('body');
 	htmlbody = $('html,body');
 	var duration = 500;
@@ -23,6 +23,9 @@
     //FadeIn all sections   
 	$body.imagesLoaded( function() {
 		setTimeout(function() {
+
+		      // Resize sections
+		      adjustWindow();
 
 		      // Init navigation
 		      initHomepageNav();
@@ -33,6 +36,34 @@
 		}, 800);
 	});
 	
+	function adjustWindow(){
+		
+		// Init Skrollr
+		var s = skrollr.init({
+		    forceHeight: false,
+		    render: function(data) {
+		    
+		        //Debugging - Log the current scroll position.
+		        //console.log(data.curTop);
+		    }
+		});
+		
+		// Get window size
+	    winH = $window.height();
+	    
+	    // Keep minimum height 550
+	    if(winH <= 550) {
+			winH = 550;
+		} 
+	    
+	    // Resize our slides
+	    $slide.height(winH);
+
+	    // Refresh Skrollr after resizing our sections
+	    s.refresh($('.homeSlide'));
+	    
+	}
+
 	//funcion para saber cual cuadro fue seleccionado desde otra pantalla
 	function getUrlParameter(sParam){
 	    var sPageURL = window.location.search.substring(1);
@@ -47,7 +78,7 @@
 
 	function initHomepageNav(){
 		
-		var slides = $('.marker');
+		var slides = $('.homeSlide');
 		var slidesCount = $(slides).length;
 		var activeSlide = 1;
 		
@@ -179,12 +210,6 @@
 			scrollToSlide(3);
 		});
 
-		//Cuarta slide si se selecciona cuadro4 en el menu
-		$('#despacho_cuadro4').click(function (e) {
-		    e.preventDefault();
-			scrollToSlide(4);
-		});
-
 		cuadro=null;
 		var cuadro = getUrlParameter('cuadro');
 		if(cuadro!=null){
@@ -194,13 +219,13 @@
 		function scrollToSlide(slideId){
 			
 			// Custom slide content offset
-		    var customSlideOffset = $("#s-"+slideId).attr('data-content-offset');
+		    var customSlideOffset = $("#despacho-"+slideId).attr('data-content-offset');
 		    
 		    
 		    // Scroll to the top of a container if it doesn't have custom offset defined
 		    if(typeof customSlideOffset === 'undefined'){
 		        
-		        htmlbody.animate({scrollTop: ($("#s-"+slideId).offset().top) + 'px'},3500);
+		        htmlbody.animate({scrollTop: ($("#despacho-"+slideId).offset().top) + 'px'},3500);
 		        
 		    } else {
 		        
