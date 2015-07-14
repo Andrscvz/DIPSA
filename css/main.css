@@ -306,21 +306,15 @@ main {
 /* ==========================================================================
     Pantalla de proyectos
    ========================================================================== */
-/* Slide 1*/
-#proyectos-1 .bcg {
-    background-image:url('../img/backgrounds/proyectos-1.jpg')
-}
-/* Slide 2 */
-#proyectos-2 .bcg {
-    background-image:url('../img/backgrounds/proyectos-2.jpg')
-}
-/* Slide 3 */
-#proyectos-3 .bcg {
-    background-image:url('../img/backgrounds/proyectos-3.jpg')
-}
-/* Slide 4 */
-#proyectos-4 .bcg {
-    background-image:url('../img/backgrounds/proyectos-4.jpg')
+
+.proyectos {
+    background-image:url('../img/backgrounds/proyectos.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 /* ==========================================================================
