@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>DIPSA</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <style type="text/css">
+			.back-link a {
+				color: #4ca340;
+				text-decoration: none; 
+				border-bottom: 1px #4ca340 solid;
+			}
+			.back-link a:hover,
+			.back-link a:focus {
+				color: #408536; 
+				text-decoration: none;
+				border-bottom: 1px #408536 solid;
+			}
+			h1 {
+				height: 100%;
+				/* The html and body elements cannot have any padding or margin. */
+				margin: 0;
+				font-size: 14px;
+				font-family: 'Open Sans', sans-serif;
+				color: #1c1d1e;
+				font-size: 32px;
+				margin-bottom: 3px;
+			}
+			h2 {
+				color: #1c1d1e;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: normal;
+			}
+			.entry-header .inner {
+				text-align: left;
+				margin: 0 auto 20px auto;
+				width: 800px;
+			}
+			.entry-header { padding-top: 20px; background-color: #fff; width:100%; position: fixed; top: 0; left: 0; z-index: 999999}
+		</style>
+    </head>
+
+    <body class="loading">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+       	 
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+        	<div class="container">
+        		<div class="navbar-header">
+        			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        			</button>
+        			<a class="navbar-brand" href="#" onclick="activar('inicio')">DIPSA</a>
+        		</div>
+        		<div id="navbar" class="navbar-collapse collapse">
+        			<ul class="nav navbar-nav">
+						<li class="dropdown active">
+							<a id="inicio" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+		        				<li id="inicio_cuadro1"><a href="#">Bienvenido</a></li>
+		        				<li id="inicio_cuadro2"><a href="#">&Uacute;ltimos Proyectos</a></li>
+		        				<li id="inicio_cuadro3"><a href="#">Misi&oacute;n</a></li>
+		        				<li id="inicio_cuadro4"><a href="#">Visi&oacute;n</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+                            <a id="despacho" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Despacho<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./views/despacho.html">cuadro1</a></li>
+                                <li><a href="./views/despacho.html?cuadro=2">cuadro2</a></li>
+                                <li><a href="./views/despacho.html?cuadro=3">cuadro3</a></li>
+                                <li><a href="./views/despacho.html?cuadro=4">cuadro4</a></li>
+                            </ul>
+                        </li>
+        				<li id="servicios" class=""><a href="#">Servicios</a></li>
+        				<li class="dropdown">
+                            <a id="proyectos" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proyectos<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./views/proyectos.html">Comerciales</a></li>
+                                <li><a href="./views/proyectos.html?cuadro=2">Residenciales</a></li>
+                                <li><a href="./views/proyectos.html?cuadro=3">Educativos</a></li>
+                                <li><a href="./views/proyectos.html?cuadro=4">Salud</a></li>
+                            </ul>
+                        </li>
+        				<li id="reconocimientos" class=""><a href="#">Reconocimientos</a></li>
+        				<li id="contacto" class=""><a href="#">Contacto</a></li>
+        			</ul>
+        		</div><!--/.nav-collapse -->
+        	</div>
+        </nav>
+
+       	<main>
+	        <section id="inicio-1" class="homeSlide">
+	        	<div class="bcg" 
+					data-center="background-position: 50% 0px;" 
+					data-top-bottom="background-position: 50% -100px;" 
+					data-anchor-target="#inicio-1">
+		        	<div class="hsContainer">
+			    		<div class="hsContent">
+				    		<h2>CREAMOS ESPACIOS QUE CUMPLEN PLANES DE VIDA</h2>
+				    		<h3>SED LOREET ALIQUAM LEOTELLUS</h3>
+				    		<br>
+				    		<div class="container-fluid">
+								<div class="row">
+									<div class="col-sm-4">
+										<p>
+											auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
+
+											Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+										</p>
+									</div>
+									<div class="col-sm-4">
+										<p>
+											auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
+
+											Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+										</p>
+									</div>
+									<div class="col-sm-4">      
+										<p>
+											auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
+
+											Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+										</p>
+									</div>
+								</div>
+							</div>
+			    		</div>
+		        	</div>
+	        	</div>
+		    </section>
+		    
+		    <section id="inicio-2" class="homeSlide">
+		    	<div class="bcg" 
+					data-0="background-color:rgb(255,255,255);" 
+					data--250-top="background-color:(0,0,0);"  
+					data-anchor-target="#inicio-2">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+				    		<h2>&Uacute;LTIMOS PROYECTOS</h2>
+				    		<h3>SED LOREET ALIQUAM LEOTELLUS</h3>
+				    		<br>
+				    		<div class="container">
+								<div class="row">
+									<a href="./views/proyectos.html" data-lightbox="img_proy1">
+										<div class="col-lg-3 col-md-6 col-xs-12">
+											<img class="img-responsive" src="./img/proyectos/ultimosProyectos/1.jpg" class="img-circle" style="margin-bottom: 12px;" width="250" height="250">
+											<p>
+												auris fermeum dictum magna.
+											</p>
+										</div>
+										<div class="col-lg-3 col-md-6 col-xs-12">
+											<img class="img-responsive" src="./img/proyectos/ultimosProyectos/2.jpg" class="img-circle" style="margin-bottom: 12px;" width="250" height="250">
+											<p>
+												auris fermeum dictum magna.
+											</p>
+										</div>
+										<div class="col-lg-3 col-md-6 col-xs-12">      
+											<img class="img-responsive" src="./img/proyectos/ultimosProyectos/3.jpg" class="img-circle" style="margin-bottom: 12px;" width="250" height="250">
+											<p>
+												auris fermeum dictum magna.
+											</p>
+										</div>
+										<div class="col-lg-3 col-md-6 col-xs-12">      
+											<img class="img-responsive" src="./img/proyectos/ultimosProyectos/4.jpg" class="img-circle" style="margin-bottom: 12px;" width="250" height="250">
+											<p>
+												auris fermeum dictum magna.
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+			    		</div>
+		        	</div>
+		    	</div>
+		    </section>
+			
+			<section id="inicio-3" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 0px 50%;" 
+					data-bottom-top="background-position: 0px 40%;" 
+					data-top-bottom="background-position: -100px 50%;" 
+					data-anchor-target="#inicio-3">
+					<div class="hsContainer">
+						<div class="hsContent">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-xs-4">
+										<h2>
+											Misi&oacute;n:
+										</h2>
+									</div>
+									<div class="col-lg-8 col-md-8 col-xs-8">
+										<h3 style="text-align:justify;">
+											auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
+										</h3>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</section>
+		    
+		    <section id="inicio-4" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 0px 50%;" 
+					data-bottom-top="background-position: 0px 40%;" 
+					data-top-bottom="background-position: -100px 50%;" 
+					data-anchor-target="#inicio-4">
+					<div class="hsContainer">
+						<div class="hsContent">
+							<h2>Visi&oacute;n</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		    <div id="progress" 
+       	 		data-start="width:0%;" 
+       	 		data-end="width:100%;"></div>
+
+		</main>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/_inicio.js"></script>
+    	<script src="js/bootstrap.js"></script>
+
+    </body>
+</html>
