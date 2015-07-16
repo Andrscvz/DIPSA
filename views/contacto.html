@@ -37,13 +37,21 @@
 			font-family: 'Open Sans', sans-serif;
 			font-weight: normal;
 		}
+		body{
+			background-image:url('../img/backgrounds/contacto-1.jpg');
+			background-position: center center;
+		    background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    background-size: cover;
+		    height: 110%;
+		    width: 100%;
+		}
 	</style>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
 		var myCenter=new google.maps.LatLng(25.694084,-100.367810);
 
-		function initialize()
-		{
+		function initialize(){
 			var mapProp = {
 				center:myCenter,
 				zoom:16,
@@ -59,6 +67,12 @@
 
 			marker.setMap(map);
 		}
+
+		google.maps.event.addDomListener(window, "resize", function() {
+		   var center = map.getCenter();
+		   google.maps.event.trigger(map, "resize");
+		   map.setCenter(center); 
+		});
 
 		google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
@@ -105,31 +119,29 @@
 	<main>
 		<section id="contacto-1" class="homeSlide">
 			<div class="bcg">
-			<div class="hsContainer">
+			<div class="hsContainer"  style="top:60px;">
 				<div class="hsContent panel-transparent">
 					<div class="container-fluid">
 						<div class="row" >
 							<div class="panel-body">
 								<h2>CONT&Aacute;CTANOS</h2>
 								<div class="col-lg-6 col-md-6 col-xs-12">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-xs-12">
-												<h3>
-													Dirección
-												</h3>
-												<p>
-													Colina Blanca # 449
-													Col. San Gerardo 
-													Monterrey, N.L, México
-													Tel: +52 (81) 8315 1758
-												</p>
-											</div>
+									<div class="row">
+										<div class="col-xs-12">
+											<h3>
+												Dirección
+											</h3>
+											<p>
+												Colina Blanca # 449
+												Col. San Gerardo 
+												Monterrey, N.L, México
+												Tel: +52 (81) 8315 1758
+											</p>
 										</div>
-										<div class="row">
-											<div class="col-xs-12">
-												<div id="googleMap" style="width:500px;height:380px;"></div>
-											</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12">
+											<div id="googleMap" style="width:100%;height:380px;"></div>
 										</div>
 									</div>
 								</div>
@@ -137,19 +149,19 @@
 									<form action="contacto.html" method="get">
 										<div class="form-group">
 											<label for="nombre">NOMBRE</label>
-											<input name="nombre" type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+											<input name="nombre" type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
 										</div>
 										<div class="form-group">
 											<label for="email">EMAIL</label>
-											<input name="email" type="text" class="form-control" id="email" placeholder="Tu email">
+											<input name="email" type="text" class="form-control" id="email" placeholder="Tu email" required>
 										</div>
 										<div class="form-group">
 											<label for="telefono">TEL&Eacute;FONO</label>
-											<input name="telefono" type="text" class="form-control" id="telefono" placeholder="Tu tel&eacute;fono">
+											<input name="telefono" type="text" class="form-control" id="telefono" placeholder="Tu tel&eacute;fono" required>
 										</div>
 										<div class="form-group">
 											<label for="mensaje">MENSAJE</label>
-											<textarea name="mensaje" class="form-control" id="mensaje" placeholder="Tu mensaje" rows="10"></textarea>
+											<textarea name="mensaje" class="form-control" id="mensaje" placeholder="Tu mensaje" rows="10" required></textarea>
 										</div>
 										<button type="submit" class="btn btn-default">Enviar Mensaje</button>
 									</form>
