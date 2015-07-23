@@ -47,6 +47,7 @@
 				text-align: justify;
 			}
 		</style>
+
     </head>
 
     <body>
@@ -83,75 +84,33 @@
 						        		<div id="navbar">
 						        			<ul class="nav navbar-nav">
 						        				<li id="Todo" class="active" onclick="filtro('Todo')"><a href="#">Todo</a></li>
-						        				<li id="Comercial" class="" onclick="filtro('Comercial')"><a href="#">Comercial</a></li>
-						        				<li id="Residencial" class="" onclick="filtro('Residencial')"><a href="#">Residencial</a></li>
-						        				<li id="Salud" class="" onclick="filtro('Salud')"><a href="#">Salud</a></li>
-						        				<li id="Educativo" class="" onclick="filtro('Educativo')"><a href="#">Educativo</a></li>
+
+						        				<?php foreach ($categorias as $categorias_item): ?>
+						        				<li id="<?=$categorias_item['categoria']?>" class="" onclick="filtro('<?=$categorias_item['categoria']?>')"><a href="#"><?=$categorias_item['categoria']?></a></li>
+							        			<?php endforeach ?>
+
 						        			</ul>
 						        		</div>
 						        	</div>
 						        </nav>
 						    </div>
-				            <div class="col-lg-4 col-md-6 col-xs-12 thumb residencial" align="center">
+						    <?php foreach ($proyectos as $proyectos_item): ?>
+				            <div class="col-lg-4 col-md-6 col-xs-12 thumb <?=$proyectos_item['categoria']?>" align="center">
 				                <div class="panel" style="height:28em;width:25em;">
 										<div class="panel-body">
-											<a href="<?php echo base_url()."/img/proyectos/1-1.jpg";?>" data-lightbox="img_proy1">
-					                   		<img class="img-responsive" src="<?php echo base_url()."/img/proyectos/1-1.jpg";?>" alt="" style="height:18em;width:23em;">
+											<a href="<?php echo base_url()."/img/proyectos/".$proyectos_item['numero']."-1.jpg";?>" data-lightbox="img_proy<?=$proyectos_item['numero']?>">
+					                   		<img class="img-responsive" src="<?php echo base_url()."/img/proyectos/".$proyectos_item['numero']."-1.jpg";?>" alt="" style="height:18em;width:23em;">
 					                		<h3>
-							                    Project Name
+							                    <?=$proyectos_item['proyectoTitulo']?>
 							                </h3>
 							            </a>
-							            <a href="<?php echo base_url()."/img/proyectos/1-2.jpg";?>" data-lightbox="img_proy1"></a>
-							            <a href="<?php echo base_url()."/img/proyectos/1-3.jpg";?>" data-lightbox="img_proy1"></a>
-						                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+							            <a href="<?php echo base_url()."/img/proyectos/".$proyectos_item['numero']."-2.jpg";?>" data-lightbox="img_proy<?=$proyectos_item['numero']?>"></a>
+							            <a href="<?php echo base_url()."/img/proyectos/".$proyectos_item['numero']."-3.jpg";?>" data-lightbox="img_proy<?=$proyectos_item['numero']?>"></a>
+						                <p><?=$proyectos_item['proyectoTexto']?></p>
 					                </div>
 					            </div>
 				            </div>
-				            <div class="col-lg-4 col-md-6 col-xs-12 thumb salud" align="center">
-				                <div class="panel panel-default" style="height:28em;width:25em;">
-										<div class="panel-body">
-											<a href="<?php echo base_url()."/img/proyectos/2-1.jpg";?>" data-lightbox="img_proy2">
-					                   		<img class="img-responsive" src="<?php echo base_url()."/img/proyectos/2-1.jpg";?>" alt="" style="height:18em;width:23em;">
-					                		<h3>
-							                    Project Name
-							                </h3>
-						                </a>
-						                <a href="<?php echo base_url()."/img/proyectos/2-2.jpg";?>" data-lightbox="img_proy2"></a>
-							            <a href="<?php echo base_url()."/img/proyectos/2-3.jpg";?>" data-lightbox="img_proy2"></a>
-						                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-					                </div>
-					            </div>
-				            </div>
-				            <div class="col-lg-4 col-md-6 col-xs-12 thumb educativo" align="center">
-				                <div class="panel panel-default" style="height:28em;width:25em;">
-										<div class="panel-body">
-				                   		<a href="<?php echo base_url()."/img/proyectos/3-1.jpg";?>" data-lightbox="img_proy3">
-					                   		<img class="img-responsive" src="<?php echo base_url()."/img/proyectos/3-1.jpg";?>" alt="" style="height:18em;width:23em;">
-					                		<h3>
-							                    Project Name
-							                </h3>
-						                </a>
-						                <a href="<?php echo base_url()."/img/proyectos/3-2.jpg";?>" data-lightbox="img_proy3"></a>
-							            <a href="<?php echo base_url()."/img/proyectos/3-3.jpg";?>" data-lightbox="img_proy3"></a>
-						                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-					                </div>
-					            </div>
-				            </div>
-				            <div class="col-lg-4 col-md-6 col-xs-12 thumb educativo" align="center">
-				                <div class="panel panel-default" style="height:28em;width:25em;">
-										<div class="panel-body">
-				                   		<a href="<?php echo base_url()."/img/proyectos/4-1.jpg";?>" data-lightbox="img_proy4">
-					                   		<img class="img-responsive" src="<?php echo base_url()."/img/proyectos/4-1.jpg";?>" alt="" style="height:18em;width:23em;">
-					                		<h3>
-							                    Project Name
-							                </h3>
-						                </a>
-						                <a href="<?php echo base_url()."/img/proyectos/4-2.jpg";?>" data-lightbox="img_proy4"></a>
-							            <a href="<?php echo base_url()."/img/proyectos/4-3.jpg";?>" data-lightbox="img_proy4"></a>
-						                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-					                </div>
-					            </div>
-				            </div>
+				            <?php endforeach ?>
 				        </div>
 				    </div>
 				</div>
@@ -159,7 +118,51 @@
 		</main>	
 	    <script src="<?php echo base_url()."/js/jquery.min.js";?>"></script>
         <script src="<?php echo base_url()."/js/lightbox-plus-jquery.js";?>"></script>
-        <script src="<?php echo base_url()."/js/_proyectos.js";?>"></script>
         <script src="<?php echo base_url()."/js/bootstrap.js";?>"></script>
+
+        <script type="text/javascript">
+
+			function filtro(tipo){
+				document.getElementById("Todo").className = "";
+				
+				<?php foreach ($categorias as $categorias_item): ?>
+			   		document.getElementById("<?=$categorias_item['categoria']?>").className = "";
+			    <?php endforeach ?>
+
+			    document.getElementById(tipo).className = "active";
+			}
+
+			$("#Todo").click(function(){
+				<?php foreach ($categorias as $categorias_item): ?>
+					$(".<?=$categorias_item['categoria']?>").show();
+    			<?php endforeach ?>
+			});
+
+
+<?php 
+			foreach ($categorias as $categorias_itemX): 
+				
+				$x = $categorias_itemX['categoria'];
+
+				echo "$(\"#".$categorias_itemX['categoria']."\").click(function(){";
+
+					foreach ($categorias as $categorias_itemY): 
+
+						if( $x == $categorias_itemY['categoria']){
+						
+							echo "$(\".".$categorias_itemY['categoria']."\").show();";
+						}else{
+						
+							echo "$(\".".$categorias_itemY['categoria']."\").hide();";
+						}
+	    			
+	    			endforeach;
+
+				echo ";});";
+
+			endforeach 
+?>
+
+		</script>
     </body>
 </html>

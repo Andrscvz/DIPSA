@@ -1,3 +1,5 @@
+
+<?php foreach ($inicio as $inicio_item): ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -79,8 +81,8 @@
 					data-anchor-target="#inicio-1">
 		        	<div class="hsContainer">
 			    		<div class="hsContent">
-				    		<h2>CREAMOS ESPACIOS QUE CUMPLEN PLANES DE VIDA</h2>
-				    		<h3>SED LOREET ALIQUAM LEOTELLUS</h3>
+				    		<h2><?=$inicio_item['bienvenidaHeading']?></h2>
+				    		<h3><?=$inicio_item['bienvenidaSubHeading']?></h3>
 			    		</div>
 		        	</div>
 	        	</div>
@@ -101,12 +103,9 @@
 										<img class="img-responsive img-rounded" src="./img/quiensomos.jpg" style="margin-bottom: 12px;" width="100%" height="100%">
 									</div>
 									<div class="col-sm-7">
-										<h3 style="color:#F0F0F0;">auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit.</h3>
+										<h3 style="color:#F0F0F0;"><?=$inicio_item['quienesTitulo']?></h3>
 										<p>
-											auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-											Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
-											auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-											Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+											<?=$inicio_item['quienesTexto']?>
 										</p>
 									</div>
 								</div>
@@ -131,8 +130,7 @@
 											MISI&Oacute;N
 										</h2>
 										<p>
-											auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-											Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+											<?=$inicio_item['mision']?>
 										</p>
 									</div>
 									<div class="col-sm-6">
@@ -148,8 +146,7 @@
 											VISI&Oacute;N
 										</h2>
 										<p>
-											auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-											Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+											<?=$inicio_item['vision']?>
 										</p>
 									</div>
 								</div>
@@ -161,8 +158,7 @@
 											VALORES
 										</h2>
 										<p>
-											auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-											Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+											<?=$inicio_item['valores']?>
 										</p>
 									</div>
 									<div class="col-sm-6">
@@ -182,7 +178,7 @@
 			    	<div class="hsContainer">
 			    		<div class="hsContent">
 				    		<h2>&Uacute;LTIMOS PROYECTOS</h2>
-				    		<h3>SED LOREET ALIQUAM LEOTELLUS</h3>
+				    		<h3><?=$inicio_item['ultimosProyectosSubHeading']?></h3>
 				    		<br>
 				    		<div class="container-fluid">
 								<div class="row">
@@ -190,37 +186,37 @@
 										<div class="col-lg-2 col-md-3 col-xs-6" align="center">
 											<img class="img-responsive" src="./img/proyectos/ultimosProyectos/1.jpg" class="img-circle" style="margin-bottom: 12px;">
 											<p>
-												auris fermeum dictum magna.
+												<?=$inicio_item['ultimosProyectos1']?>
 											</p>
 										</div>
 										<div class="col-lg-2 col-md-3 col-xs-6" align="center">
 											<img class="img-responsive" src="./img/proyectos/ultimosProyectos/2.jpg" class="img-circle" style="margin-bottom: 12px;">
 											<p>
-												auris fermeum dictum magna.
+												<?=$inicio_item['ultimosProyectos2']?>
 											</p>
 										</div>
 										<div class="col-lg-2 col-md-3 col-xs-6" align="center">      
 											<img class="img-responsive" src="./img/proyectos/ultimosProyectos/3.jpg" class="img-circle" style="margin-bottom: 12px;">
 											<p>
-												auris fermeum dictum magna.
+												<?=$inicio_item['ultimosProyectos3']?>
 											</p>
 										</div>
 										<div class="col-lg-2 col-md-3 col-xs-6" align="center">      
 											<img class="img-responsive" src="./img/proyectos/ultimosProyectos/4.jpg" class="img-circle" style="margin-bottom: 12px;">
 											<p>
-												auris fermeum dictum magna.
+												<?=$inicio_item['ultimosProyectos4']?>
 											</p>
 										</div>
 										<div class="col-lg-2 col-md-3 col-xs-6" align="center">
 											<img class="img-responsive" src="./img/proyectos/ultimosProyectos/5.jpg" class="img-circle" style="margin-bottom: 12px;">
 											<p>
-												auris fermeum dictum magna.
+												<?=$inicio_item['ultimosProyectos5']?>
 											</p>
 										</div>
 										<div class="col-lg-2 col-md-3 col-xs-6" align="center">
 											<img class="img-responsive" src="./img/proyectos/ultimosProyectos/6.jpg" class="img-circle" style="margin-bottom: 12px;">
 											<p>
-												auris fermeum dictum magna.
+												<?=$inicio_item['ultimosProyectos6']?>
 											</p>
 										</div>
 									</a>
@@ -247,3 +243,5 @@
         <script src="<?php echo base_url()."/js/bootstrap.js";?>"></script>
     </body>
 </html>
+
+<?php endforeach ?>

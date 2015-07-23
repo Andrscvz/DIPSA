@@ -1,3 +1,4 @@
+<?php foreach ($despacho as $despacho_item): ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -64,17 +65,10 @@
                                                 ARQ. RA&Uacute;L E. CAVAZOS
                                             </h2>
                                             <h3 style="color:#F0F0F0;">
-                                                auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit.
+                                                <?=$despacho_item['arqTitulo']?>
                                             </h3>
                                             <p>
-                                                auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-                                                Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
-
-                                                auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-                                                Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
-
-                                                auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-                                                Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+                                                <?=$despacho_item['arqTexto']?>
                                             </p>
                                         </div>
                                     </div>
@@ -103,38 +97,34 @@
                                         </h2>
                                         <div class="col-lg-3 col-md-6 col-xs-12">
                                             <h3 style="color:#F0F0F0;">
-                                                auris fermeum dictum magna.
+                                                <?=$despacho_item['ventajasTitulo1']?>
                                             </h3>
                                             <p>
-                                                auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-                                                Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+                                                <?=$despacho_item['ventajasTexto1']?>
                                             </p>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-xs-12">
                                             <h3 style="color:#F0F0F0;">
-                                                auris fermeum dictum magna.
+                                                <?=$despacho_item['ventajasTitulo2']?>
                                             </h3>
                                             <p>
-                                                auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-                                                Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+                                                <?=$despacho_item['ventajasTexto2']?>
                                             </p>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-xs-12">
                                             <h3 style="color:#F0F0F0;">
-                                                auris fermeum dictum magna.
+                                                <?=$despacho_item['ventajasTitulo3']?>
                                             </h3>
                                             <p>
-                                                auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-                                                Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+                                                <?=$despacho_item['ventajasTexto3']?>
                                             </p>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-xs-12">
                                             <h3 style="color:#F0F0F0;">
-                                                auris fermeum dictum magna.
+                                                <?=$despacho_item['ventajasTitulo4']?>
                                             </h3>
                                             <p>
-                                                auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-                                                Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean
+                                                <?=$despacho_item['ventajasTexto4']?>
                                             </p>
                                         </div>
                                     </div>
@@ -162,12 +152,11 @@
                                         <div class="col-lg-4 col-md-6 col-xs-12">
                                             <blockquote>
                                                 <p>
-                                                    "auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-                                                    Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean"
+                                                    "<?=$despacho_item['testimoniosTexto1']?>"
                                                 </p>
                                                 <p>
                                                     <small  style="color:#F0F0F0;">
-                                                        Persona 1
+                                                        <?=$despacho_item['testimoniosPersona1']?>
                                                     </small>
                                                 </p>
                                             </blockquote>
@@ -175,12 +164,11 @@
                                         <div class="col-lg-4 col-md-6 col-xs-12">
                                             <blockquote>
                                                 <p>
-                                                    "auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-                                                    Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean"
+                                                    "<?=$despacho_item['testimoniosTexto2']?>"
                                                 </p>
                                                 <p>
                                                     <small  style="color:#F0F0F0;">
-                                                        Persona 2
+                                                        <?=$despacho_item['testimoniosPersona2']?>
                                                     </small>
                                                 </p>
                                             </blockquote>
@@ -188,12 +176,11 @@
                                         <div class="col-lg-4 col-md-6 col-xs-12">
                                             <blockquote>
                                                 <p>
-                                                    "auris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel cursleifend elit. Aenean aucto. wisi et urna. Aliqat volutpat. Duisac turpis. Integer rutrum ante eu lacuestibulu.
-                                                    Duisac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at nequeVivamus eget nibh. Etiamursus leo vel metus. Nulla facilisi. Aenean"
+                                                    "<?=$despacho_item['testimoniosTexto3']?>"
                                                 </p>
                                                 <p>
                                                     <small  style="color:#F0F0F0;">
-                                                        Persona 3
+                                                        <?=$despacho_item['testimoniosPersona3']?>
                                                     </small>
                                                 </p>
                                             </blockquote>
@@ -219,3 +206,5 @@
         <script src="<?php echo base_url()."/js/bootstrap.js";?>"></script>
     </body>
 </html>
+
+<?php endforeach ?>

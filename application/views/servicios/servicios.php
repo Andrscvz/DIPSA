@@ -1,3 +1,5 @@
+<?php foreach ($servicios as $servicios_item): ?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -89,74 +91,50 @@
                                         </h2>
                                         <div class="col-lg-6 col-md-6 col-xs-12">
 					                		<h2>
-					                			1. Master Planning
+					                			<?=$servicios_item['servicioTitulo1']?>
 					                		</h2>
 					                		<p>
-					                			- Plan personalizado.<br>
-												- Evaluación de propiedad.<br>
-												- Estructuración de capital y deuda.<br>
-												- Mercado meta.<br>
-												- Residencial/Comercial/Usos Mixtos
+					                			<?php echo nl2br($servicios_item['servicioTexto1'])?>
 					                		</p>
 					                    </div>
 					                    <div class="col-lg-6 col-md-6 col-xs-12">   
 					                    	<h2>
-					                			2. Feasibility Studies
+					                			<?=$servicios_item['servicioTitulo2']?>
 					                		</h2>
 					                		<p>
-					                			- Plan personalizado.<br>
-												- Evaluación de propiedad.<br>
-												- Estructuración de capital y deuda.<br>
-												- Mercado meta.<br>
-												- Residencial/Comercial/Usos Mixtos
+					                			<?php echo nl2br($servicios_item['servicioTexto2'])?>
 					                		</p>
 					                    </div>
 					                    <div class="col-lg-6 col-md-6 col-xs-12">    
 					                    	<h2>
-					                			3. Site Analysis
+					                			<?=$servicios_item['servicioTitulo3']?>
 					                		</h2>
 					                		<p>
-					                			- Plan personalizado.<br>
-												- Evaluación de propiedad.<br>
-												- Estructuración de capital y deuda.<br>
-												- Mercado meta.<br>
-												- Residencial/Comercial/Usos Mixtos
+					                			<?php echo nl2br($servicios_item['servicioTexto3'])?>
 					                		</p>
 					                    </div>
 					                    <div class="col-lg-6 col-md-6 col-xs-12">  
 					                    	<h2>
-					                			4. Space Planning
+					                			<?=$servicios_item['servicioTitulo4']?>
 					                		</h2>
 					                		<p>
-					                			- Plan personalizado.<br>
-												- Evaluación de propiedad.<br>
-												- Estructuración de capital y deuda.<br>
-												- Mercado meta.<br>
-												- Residencial/Comercial/Usos Mixtos
+					                			<?php echo nl2br($servicios_item['servicioTexto4'])?>
 					                		</p>
 					                    </div>
 					                    <div class="col-lg-6 col-md-6 col-xs-12">            
 					                    	<h2>
-					                			5. 3D Modeling
+					                			<?=$servicios_item['servicioTitulo5']?>
 					                		</h2>
 					                		<p>
-					                			- Plan personalizado.<br>
-												- Evaluación de propiedad.<br>
-												- Estructuración de capital y deuda.<br>
-												- Mercado meta.<br>
-												- Residencial/Comercial/Usos Mixtos
+					                			<?php echo nl2br($servicios_item['servicioTexto5'])?>
 					                		</p>
 					                    </div>
 					                    <div class="col-lg-6 col-md-6 col-xs-12"> 
 					                    	<h2>
-					                			6. Needs Analysis
+					                			<?=$servicios_item['servicioTitulo6']?>
 					                		</h2>
 					                		<p>
-					                			- Plan personalizado.<br>
-												- Evaluación de propiedad.<br>
-												- Estructuración de capital y deuda.<br>
-												- Mercado meta.<br>
-												- Residencial/Comercial/Usos Mixtos
+					                			<?php echo nl2br($servicios_item['servicioTexto6'])?>
 					                		</p>
 					                    </div>
                                     </div>
@@ -174,3 +152,6 @@
         <script src="<?php echo base_url()."/js/bootstrap.js";?>"></script>
     </body>
 </html>
+
+
+<?php endforeach ?>
