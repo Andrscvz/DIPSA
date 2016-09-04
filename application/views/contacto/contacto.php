@@ -11,11 +11,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="<?php echo base_url()."/css/normalize.css";?>">
-        <link rel="stylesheet" href="<?php echo base_url()."/css/main.css";?>">
-        <link rel="stylesheet" href="<?php echo base_url()."/css/bootstrap.css";?>">
-        <script src="<?php echo base_url()."/js/vendor/modernizr-2.7.1.min.js";?>"></script>
+	<link rel="stylesheet" href="<?php echo base_url()."/css/normalize.css";?>">
+	<link rel="stylesheet" href="<?php echo base_url()."/css/main.css";?>">
+	<link rel="stylesheet" href="<?php echo base_url()."/css/bootstrap.css";?>">
+	<script src="<?php echo base_url()."/js/vendor/modernizr-2.7.1.min.js";?>"></script>
 
 	<style type="text/css">
 		h1 {
@@ -48,7 +47,7 @@
 		    width: 100%;
 		}
 	</style>
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc9YX2Ym2rS7usJo4T2jKbFSzDhDypTHo"></script>
 	<script>
 		var myCenter=new google.maps.LatLng(25.694084,-100.367810);
 

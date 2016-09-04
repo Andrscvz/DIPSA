@@ -26,6 +26,9 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `contacto`
 --
 
+create database `dipsa`;
+use `dipsa`;
+
 CREATE TABLE IF NOT EXISTS `contacto` (
   `idContacto` int(11) NOT NULL AUTO_INCREMENT,
   `direccion` varchar(150) DEFAULT NULL,
@@ -118,6 +121,7 @@ CREATE TABLE IF NOT EXISTS `proyectos` (
   `numero` int(11) NOT NULL,
   `proyectoTitulo` varchar(30) DEFAULT NULL,
   `proyectoTexto` varchar(150) DEFAULT NULL,
+  `categoria` 	varchar(20) DEFAULT NULL,
   PRIMARY KEY (`idProyectos`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
@@ -125,11 +129,11 @@ CREATE TABLE IF NOT EXISTS `proyectos` (
 -- Volcado de datos para la tabla `proyectos`
 --
 
-INSERT INTO `proyectos` (`idProyectos`, `numero`, `proyectoTitulo`, `proyectoTexto`) VALUES
-(1, 1, 'Project Name 1', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.'),
-(2, 2, 'Project Name 2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.'),
-(3, 3, 'Project Name 3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.'),
-(4, 4, 'Project Name 4', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.');
+INSERT INTO `proyectos` (`idProyectos`, `numero`, `proyectoTitulo`, `proyectoTexto`, `categoria`) VALUES
+(1, 1, 'Project Name 1', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.', 'Residencial'),
+(2, 2, 'Project Name 2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.', 'Comercial'),
+(3, 3, 'Project Name 3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.', 'Residencial'),
+(4, 4, 'Project Name 4', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.', 'Comercial');
 
 -- --------------------------------------------------------
 
