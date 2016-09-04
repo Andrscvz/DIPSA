@@ -7,8 +7,9 @@ class Contacto extends CI_Controller {
     {
     	if ( ! file_exists(APPPATH.'/views/contacto/'.$page.'.php'))
         {
-                // Whoops, we don't have a page for that!
-                show_404();
+			echo APPPATH.'/views/contacto/'.$page.'.php';
+			// Whoops, we don't have a page for that!
+			show_404();
         }
         $this->load->helper('url');
         $data['title'] = ucfirst($page); // Capitalize the first letter
